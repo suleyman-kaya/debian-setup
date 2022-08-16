@@ -1,0 +1,3 @@
+while true;
+do xsetroot -name "WLAN: $(iwgetid -r) | Wired: $(ip link | awk -F: '$0 !~ "lo|vir|wl|^[^0-9]"{print $2;getline}') | $(date "+%H:%M:%S | %d/%m/%y") | Battery: %$(cat /sys/class/power_supply/axp288_fuel_gauge/capacity) [$(cat /sys/class/power_supply/axp288_fuel_gauge/status)]";
+done

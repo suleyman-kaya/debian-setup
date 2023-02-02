@@ -32,14 +32,14 @@ static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
 static const char *fonts[]          = { "monospace:size=16" };
 static const char dmenufont[]       = "monospace:size=16";
-static const char col_gray1[]       = "#504136";
-static const char col_gray2[]       = "#A8A094";
-static const char col_gray3[]       = "#E3DAD1";
-static const char col_gray4[]       = "#DABAA4";
-static const char col_cyan[]        = "#A27A5D";
+static const char col_gray1[]       = "#163805";
+static const char col_gray2[]       = "#163805";
+static const char col_gray3[]       = "#73d802";
+static const char col_gray4[]       = "#73D802";
+static const char col_cyan[]        = "#4c8e06";
 static const char *colors[][3]      = {
 	/*               fg         bg         border   */
-	[SchemeNorm] = { col_gray3, col_gray1, col_gray2 },
+	[SchemeNorm] = { col_gray3, col_gray1, col_gray4 },
 	[SchemeSel]  = { col_gray4, col_cyan,  col_cyan  },
 };
 

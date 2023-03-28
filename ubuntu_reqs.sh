@@ -1,2 +1,1 @@
-sudo apt-get install libx11-dev libxft-dev libxinerama-dev
-
+sudo apt-get install libx11-dev libxft-dev libxinerama-dev light

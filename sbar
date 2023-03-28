@@ -1,3 +1,3 @@
 while true;
-do xsetroot -name "WLAN: $(iwgetid -r) | Wired: $(ip link | awk -F: '$0 !~ "lo|vir|wl|^[^0-9]"{print $2;getline}') | $(date "+%H:%M:%S | %d/%m/%y")";
+do xsetroot -name "[$(iw dev | awk '$1=="Interface"{print $2}')] $(iwgetid -r); [$(nmcli --get-values GENERAL.DEVICE,GENERAL.TYPE device show | sed '/^ethernet/!{h;d;};x')] $(ip link | awk -F: '$0 !~ "lo|vir|wl|^[^0-9]"{print $2;getline}'); [BAT0] $(cat /sys/class/power_supply/BAT0/capacity) $(cat /sys/class/power_supply/BAT0/status); [date] $(date "+%H:%M:%S | %d/%m/%y")";
 done

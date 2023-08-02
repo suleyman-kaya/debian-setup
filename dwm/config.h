@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 /**
  *  * dwmconfig.h 
  *   * Hardware multimedia keys
@@ -144,6 +143,3 @@ static Button buttons[] = {
 	{ ClkTagBar,            MODKEY,         Button1,        tag,            {0} },
 	{ ClkTagBar,            MODKEY,         Button3,        toggletag,      {0} },
 };
-
-=======
->>>>>>> fe54114cb381fe6374bf6181b6e6524985c90a61

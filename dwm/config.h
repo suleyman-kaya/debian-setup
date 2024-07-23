@@ -17,9 +17,9 @@
 /* See LICENSE file for copyright and license details. */
 
 /* Add somewhere in your constants definition section */
-static const char *upvol[]   = { "/usr/bin/pactl", "set-sink-volume", "alsa_output.pci-0000_00_1b.0.analog-stereo", "+5%",     NULL };
-static const char *downvol[] = { "/usr/bin/pactl", "set-sink-volume", "alsa_output.pci-0000_00_1b.0.analog-stereo", "-5%",     NULL };
-static const char *mutevol[] = { "/usr/bin/pactl", "set-sink-mute",   "alsa_output.pci-0000_00_1b.0.analog-stereo", "toggle",  NULL };
+static const char *upvol[]   = { "/usr/bin/pactl", "set-sink-volume", "alsa_output.platform-70030000.hda.hdmi-stereo", "+5%",     NULL };
+static const char *downvol[] = { "/usr/bin/pactl", "set-sink-volume", "alsa_output.platform-70030000.hda.hdmi-stereo", "-5%",     NULL };
+static const char *mutevol[] = { "/usr/bin/pactl", "set-sink-mute",   "alsa_output.platform-70030000.hda.hdmi-stereo", "toggle",  NULL };
 
 /* To use light add this to the constant definition section. Thanks Hritik14. */
 static const char *light_up[] = {"/usr/bin/light", "-A", "5", NULL};
@@ -30,13 +30,13 @@ static const unsigned int borderpx  = 1;        /* border pixel of windows */
 static const unsigned int snap      = 32;       /* snap pixel */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
-static const char *fonts[]          = { "monospace:size=16" };
-static const char dmenufont[]       = "monospace:size=16";
-static const char col_gray1[]       = "#163805";
+static const char *fonts[]          = { "monospace:size=48" };
+static const char dmenufont[]       = "monospace:size=48";
+static const char col_gray1[]       = "#6684e1";
 static const char col_gray2[]       = "#163805";
-static const char col_gray3[]       = "#73d802";
-static const char col_gray4[]       = "#73D802";
-static const char col_cyan[]        = "#4c8e06";
+static const char col_gray3[]       = "#fefbec";
+static const char col_gray4[]       = "#96FF00";
+static const char col_cyan[]        = "#b854d4";
 static const char *colors[][3]      = {
 	/*               fg         bg         border   */
 	[SchemeNorm] = { col_gray3, col_gray1, col_gray4 },
